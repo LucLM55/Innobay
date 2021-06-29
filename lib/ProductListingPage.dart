@@ -188,6 +188,7 @@ class _ProductListingPageState extends State<ProductListingPage> {
                                     padding: const EdgeInsets.only(top: 8.0),
                                     child: GestureDetector(
                                       onTap: () async {
+                                        //open listing in ebay
                                         if (await canLaunch(
                                             _itemListing[index].ebayURL)) {
                                           await launch(
